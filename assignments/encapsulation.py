@@ -1,0 +1,20 @@
+A method to check if it's a square (isSquare())
+
+"""
+    
+class   Rectangle:
+    def __init__(self,length,width):
+        self.__length = length
+        self.__width = width
+
+    def getarea(self):
+        return f"Area of {self.__width} width and {self.__length} length = {self.__width * self.__length}"    
+
+    def getPerimeter(self):
+        return f"Perimeter of {self.__width} width and {self.__length} length = {2 * (self.__width + self.__length)}"
+
+    def IsSquare(self):
+        return self.__width == self.length
+
+myRectangle = Rectangle(5,10)
+print(myRectangle.getArea()) 
